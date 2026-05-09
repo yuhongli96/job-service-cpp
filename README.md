@@ -92,10 +92,11 @@ Exiting...
 
 ## Job States
 
-- PENDING: job is waiting in the queue
-- RUNNING: job is currently being processed
-- DONE: job completed successfully
-- FAILED: job failed (e.g. file cannot be opened)
+- Pending: job is waiting in the queue
+- Running: job is currently being processed
+- Done: job completed successfully
+- Failed: job failed (e.g. file cannot be opened)
+- Not found: the requested job ID does not exist
 
 ---
 
