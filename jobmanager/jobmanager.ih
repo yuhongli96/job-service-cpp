@@ -1,0 +1,8 @@
+#include "jobmanager.h"
+#include <memory>
+#include <iostream>
+#include <mutex>
+#include <thread>
+using namespace std;
+
+size_t defaultWorkerCount();

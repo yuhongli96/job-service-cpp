@@ -1,0 +1,10 @@
+#include "jobmanager/jobmanager.h"
+#include <iostream>
+using namespace std;
+
+void showMenu();
+bool isNumber(string const &str);
+void submitJob(JobManager &jobManager);
+void showStatus(JobManager &jobManager);
+void showResult(JobManager &jobManager);
+void list(JobManager &jobManager);
