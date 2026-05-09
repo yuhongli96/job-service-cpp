@@ -36,17 +36,24 @@ Together, these components form a producer–consumer architecture where jobs ar
 - CMake version 3.16 or higher
 
 ### Build
+
 ```bash
-cmake -S . -B build
-cmake --build build
-
-### Run
-```bach
-./build/job_service
-
----
+$ cmake -S . -B build
+$ cmake --build build
+```
 
 ## Usage
+
+```bash
+$ ./build/job_service
+```
+
+Follow the command instruction when prompted.
+
+
+## Example
+```shell
+$ ./build/job_service
 
 ==== Job Service ====
 1. Submit word-count job
@@ -55,10 +62,31 @@ cmake --build build
 4. List all jobs
 5. Exit
 
-### Example
-Enter file path: tests/sample.txt
+Choose an option: 1
+
+Enter file path: tests/large.txt
 Job submitted successfully
 Job ID: 1
+
+Choose an option: 2
+Enter job ID: 1
+Job 1 status: Done
+
+
+Choose an option: 3
+Enter job ID: 1
+Job 1 result:
+Lines: 1270000
+Words: 10160000
+Characters: 52070000
+
+Choose an option: 4
+Jobs:
+[1] Done
+
+Choose an option: 5
+Exiting...
+```
 
 ---
 
